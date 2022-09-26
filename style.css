@@ -1,0 +1,100 @@
+.todo-app {
+  width: 800px;
+  margin: 60px auto;
+  min-height: 300px;
+  padding: 20px;
+  border-radius: 6px;
+}
+@media (min-width: 768px) and (min-width: 991px) {
+  .todo-app {
+    width: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .todo-app {
+    width: 350px;
+  }
+}
+.todo-app .form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #e7e7c9;
+  width: 100%;
+  height: 60px;
+  padding: 20px 0;
+  border-radius: 6px;
+}
+.todo-app .form .input {
+  width: 60%;
+  height: 50px;
+  border: none;
+  border-radius: 6px;
+  color: #575746;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.todo-app .form .input:focus {
+  outline: 1px solid rgb(179, 162, 162);
+}
+.todo-app .form .add {
+  width: 180px;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.664);
+  color: white;
+  transition: 0.3s;
+}
+.todo-app .form .add:hover {
+  background-color: rgba(255, 0, 0, 0.842);
+  transform: scale(1.1);
+}
+.todo-app .info {
+  width: 70%;
+  height: 25px;
+  padding: 10px;
+  background-color: #e7e7c9;
+  border-radius: 6px;
+  color: red;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: bold;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.todo-app .tasks {
+  margin-top: 30px;
+  background-color: #e7e7c9;
+  padding: 30px;
+}
+.todo-app .tasks .task {
+  margin-bottom: 20px;
+  font-size: 22px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+.todo-app .tasks .task:hover {
+  background-color: rgba(255, 255, 255, 0.568);
+}
+.todo-app .tasks .task span {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.842);
+  right: 30px;
+  color: white;
+  padding: 0 5px;
+  font-size: 20px;
+  border-radius: 6px;
+}
+.todo-app .tasks .done {
+  opacity: 0.5;
+}
